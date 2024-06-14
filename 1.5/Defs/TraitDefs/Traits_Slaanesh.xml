@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--===== BLESSING OF SLAANESH =====-->
+    <TraitDef>
+        <defName>BEWH_BlessingOfSlaanesh</defName>
+        <commonality>0</commonality>
+        <forcedPassions>
+            <li>Social</li>
+            <li>Artistic</li>
+        </forcedPassions>
+        <degreeDatas>
+            <li>
+                <label>blessing of Slaanesh</label>
+                <description>{PAWN_nameDef} is blessed by Slaanesh.</description>
+                <statOffsets>
+                    <MeleeDodgeChance>5</MeleeDodgeChance>
+                    <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+                    <MoveSpeed>0.2</MoveSpeed>
+                </statOffsets>
+                <skillGains>
+                    <Social>2</Social>
+                    <Artistic>2</Artistic>
+                </skillGains>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+</Defs>

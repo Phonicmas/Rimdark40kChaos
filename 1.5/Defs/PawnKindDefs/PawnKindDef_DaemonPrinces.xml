@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Daemon Prince Base -->
+
+    <PawnKindDef Name="DaemonPrincePawnBase" Abstract="True">
+        <race>Human</race>
+        <initialWillRange>3000~4000</initialWillRange>
+        <initialResistanceRange>3000~4000</initialResistanceRange>
+        <acceptArrestChanceFactor>0</acceptArrestChanceFactor>
+        <invNutrition>2.55</invNutrition>
+        <backstoryCryptosleepCommonality>1.0</backstoryCryptosleepCommonality>
+        <minGenerationAge>31</minGenerationAge>
+        <maxGenerationAge>8417</maxGenerationAge>
+        <itemQuality>Good</itemQuality>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <allowOldAgeInjuries>false</allowOldAgeInjuries>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>ImperialFighter</li>
+                    <li>Offworld</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <gearHealthRange>
+            <min>1</min>
+            <max>1</max>
+        </gearHealthRange>
+        <weaponMoney>10000~10000</weaponMoney>
+        <apparelMoney>
+            <min>0</min>
+            <max>0</max>
+        </apparelMoney>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li>UltratechMelee</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <countRange>
+                        <min>4</min>
+                        <max>5</max>
+                    </countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineUltratech</thingDef>
+                    <countRange>
+                        <min>2</min>
+                        <max>5</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>10~17</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>16~18</range>
+            </li>
+        </skills>
+        <combatPower>600</combatPower>
+    </PawnKindDef>
+
+    <!-- Undivided -->
+    <PawnKindDef ParentName="DaemonPrincePawnBase">
+        <defName>BEWH_DPUndivided</defName>
+        <label>Chaos Marine</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(20,20,20)</apparelColor>
+        <apparelRequired>
+            <li>BEWH_UndividedPowerArmor</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_DPUndivided>1</BEWH_DPUndivided>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Khorne -->
+    <PawnKindDef ParentName="DaemonPrincePawnBase">
+        <defName>BEWH_DPKhorne</defName>
+        <label>Khorne Marine</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(110,0,0)</apparelColor>
+        <apparelRequired>
+            <li>BEWH_KhornePowerArmor</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_DPKhorne>1</BEWH_DPKhorne>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Nurgle -->
+    <PawnKindDef ParentName="DaemonPrincePawnBase">
+        <defName>BEWH_DPNurgle</defName>
+        <label>Nurgle Marine</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(65,75,0)</apparelColor>
+        <apparelRequired>
+            <li>BEWH_NurglePowerArmor</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_DPNurgle>1</BEWH_DPNurgle>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Slaanesh -->
+    <PawnKindDef ParentName="DaemonPrincePawnBase">
+        <defName>BEWH_DPSlaanesh</defName>
+        <label>Slaanesh Marine</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(170,0,75)</apparelColor>
+        <apparelRequired>
+            <li>BEWH_SlaaneshPowerArmor</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_DPSlaanesh>1</BEWH_DPSlaanesh>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Tzeentch -->
+    <PawnKindDef ParentName="DaemonPrincePawnBase">
+        <defName>BEWH_DPTzeentch</defName>
+        <label>Tzeentch Marine</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(0,60,155)</apparelColor>
+        <apparelRequired>
+            <li>BEWH_TzeentchPowerArmor</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_DPTzeentch>1</BEWH_DPTzeentch>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+</Defs>

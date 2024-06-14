@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- ===== NURGLE ===== -->
+    <!-- Power Armor Nurgle -->
+    <ThingDef ParentName="BEWH_PowerArmorBase">
+        <defName>BEWH_NurglePowerArmor</defName>
+        <label>Nurgle Power Armor</label>
+        <description>Power armor of Nurgle Space Marines</description>
+        <graphicData>
+            <texPath>Things/Armor/Chaos/Nurgle/NurglePowerArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Chaos/Nurgle/NurglePowerArmor</wornGraphicPath>
+            <tags>
+                <li>NurglePowerArmor</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_NurgleResearch</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- Power Armor Helmet Nurgle -->
+    <ThingDef ParentName="BEWH_PowerArmorHelmetBase">
+        <defName>BEWH_NurglePowerArmorHelmet</defName>
+        <label>Nurgle Power Helmet</label>
+        <description>Standard issue helmet of Nurgle Space Marines</description>
+        <graphicData>
+            <texPath>Things/Headgear/Chaos/Nurgle/NurgleHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Chaos/Nurgle/NurgleHelmet</wornGraphicPath>
+            <tags>
+                <li>NurglePowerArmorHelmet</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_NurgleResearch</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+
+    <!-- ===== TZEENTCH ===== -->
+    <!-- Power Armor Tzeentch -->
+    <ThingDef ParentName="BEWH_PowerArmorBase">
+        <defName>BEWH_TzeentchPowerArmor</defName>
+        <label>Tzeentch Power Armor</label>
+        <description>Power armor of Tzeentch Space Marines</description>
+        <graphicData>
+            <texPath>Things/Armor/Chaos/Tzeentch/TzeentchPowerArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Chaos/Tzeentch/TzeentchPowerArmor</wornGraphicPath>
+            <tags>
+                <li>TzeentchPowerArmor</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_TzeentchResearch</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- Power Armor Helmet Tzeentch -->
+    <ThingDef ParentName="BEWH_PowerArmorHelmetBase">
+        <defName>BEWH_TzeentchPowerArmorHelmet</defName>
+        <label>Tzeentch Power Helmet</label>
+        <description>Standard issue helmet of Tzeentch Space Marines</description>
+        <graphicData>
+            <texPath>Things/Headgear/Chaos/Tzeentch/TzeentchHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Chaos/Tzeentch/TzeentchHelmet</wornGraphicPath>
+            <tags>
+                <li>TzeentchPowerArmorHelmet</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_TzeentchResearch</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+
+    <!-- ===== SLAANESH ===== -->
+    <!-- Power Armor Slaanesh -->
+    <ThingDef ParentName="BEWH_PowerArmorBase">
+        <defName>BEWH_SlaaneshPowerArmor</defName>
+        <label>Slaanesh Power Armor</label>
+        <description>Power armor of Slaanesh Space Marines</description>
+        <graphicData>
+            <texPath>Things/Armor/Chaos/Slaanesh/SlaaneshPowerArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Chaos/Slaanesh/SlaaneshPowerArmor</wornGraphicPath>
+            <tags>
+                <li>SlaaneshPowerArmor</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_SlaaneshResearch</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- Power Armor Helmet Slaanesh -->
+    <ThingDef ParentName="BEWH_PowerArmorHelmetBase">
+        <defName>BEWH_SlaaneshPowerArmorHelmet</defName>
+        <label>Slaanesh Power Helmet</label>
+        <description>Standard issue helmet of Slaanesh Space Marines</description>
+        <graphicData>
+            <texPath>Things/Headgear/Chaos/Slaanesh/SlaaneshHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Chaos/Slaanesh/SlaaneshHelmet</wornGraphicPath>
+            <tags>
+                <li>SlaaneshPowerArmorHelmet</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_SlaaneshResearch</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+
+    <!-- ===== KHORNE ===== -->
+    <!-- Power Armor Khorne -->
+    <ThingDef ParentName="BEWH_PowerArmorBase">
+        <defName>BEWH_KhornePowerArmor</defName>
+        <label>Khorne Power Armor</label>
+        <description>Power armor of Khorne Space Marines</description>
+        <graphicData>
+            <texPath>Things/Armor/Chaos/Khorne/KhornePowerArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Chaos/Khorne/KhornePowerArmor</wornGraphicPath>
+            <tags>
+                <li>KhornePowerArmor</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_KhorneResearch</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- Power Armor Helmet Khorne -->
+    <ThingDef ParentName="BEWH_PowerArmorHelmetBase">
+        <defName>BEWH_KhornePowerArmorHelmet</defName>
+        <label>Khorne Power Helmet</label>
+        <description>Standard issue helmet of Khorne Space Marines</description>
+        <graphicData>
+            <texPath>Things/Headgear/Chaos/Khorne/KhorneHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Chaos/Khorne/KhorneHelmet</wornGraphicPath>
+            <tags>
+                <li>KhornePowerArmorHelmet</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_KhorneResearch</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <!-- ===== UNDIVIDED ===== -->
+    <!-- Power Armor Undivided -->
+    <ThingDef ParentName="BEWH_PowerArmorBase">
+        <defName>BEWH_UndividedPowerArmor</defName>
+        <label>Undivided Power Armor</label>
+        <description>Power armor of the Undivided Space Marines</description>
+        <graphicData>
+            <texPath>Things/Armor/Chaos/Undivided/ImperiumPowerArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Armor/Chaos/Undivided/ImperiumPowerArmor</wornGraphicPath>
+            <tags>
+                <li>UndividedPowerArmorHelmet</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_UndividedResearch</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+    
+    <!-- Power Armor Helmet Undivided -->
+    <ThingDef ParentName="BEWH_PowerArmorHelmetBase">
+        <defName>BEWH_UndividedPowerArmorHelmet</defName>
+        <label>Undivided Power Helmet</label>
+        <description>Standard issue helmet of the Undivided Space Marines</description>
+        <graphicData>
+            <texPath>Things/Headgear/Chaos/Undivided/ImperiumHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Headgear/Chaos/Undivided/ImperiumHelmet</wornGraphicPath>
+            <tags>
+                <li>UndividedPowerArmorHelmet</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>BEWH_UndividedResearch</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+</Defs>

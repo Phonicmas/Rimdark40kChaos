@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Daemon Prince Slaanesh -->
+  <XenotypeDef ParentName="DaemonPrinceBase">
+    <defName>BEWH_DPSlaanesh</defName>
+    <label>Daemon prince of Slaanesh</label>
+    <description>Daemon prince of Slaanesh, chosen to lead the forces of Slaanesh.</description>
+    <descriptionShort>Slaanesh Daemon prince.</descriptionShort>
+    <iconPath>UI/Xenotypes/DaemonPrinceSlaaneshXenoIcon</iconPath>
+    <genes>
+      <li>BEWH_SlaaneshMark</li>
+      <li>BEWH_SlaaneshColor</li>
+    </genes>
+  </XenotypeDef>
+
+  <!-- Slaanesh Cultist -->
+  <XenotypeDef ParentName="ChaosCultistBase">
+    <defName>BEWH_SlaaneshCultist</defName>
+    <label>slaanesh cultist</label>
+    <description>A pawn led down the road of chaos, this one follows Slaanesh, the lord of pleasure.</description>
+    <descriptionShort>Slanesh follower.</descriptionShort>
+    <iconPath>UI/Xenotypes/CultistSlaaneshXenoIcon</iconPath>
+    <genes>
+      <li>BEWH_SlaaneshMark</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

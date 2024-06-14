@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="BEWH_ChaosFactionBase">
+        <defName>BEWH_SlaaneshFaction</defName>
+        <label>Slaanesh</label>
+        <description>Chaos</description>
+
+        <fixedName>Slaanesh</fixedName>
+
+        <pawnSingular>Slaanesh Worshipper</pawnSingular>
+        <pawnsPlural>Slaanesh Worshippers</pawnsPlural>
+        <leaderTitle>Daemon Lord of Slaanesh</leaderTitle>
+
+        <fixedLeaderKinds>
+            <li>BEWH_DPSlaanesh</li>
+        </fixedLeaderKinds>
+
+        <factionNameMaker>BEWH_FactionSlaaneshNameMaker</factionNameMaker>
+        <settlementNameMaker>BEWH_SlaaneshSettlementNameMaker</settlementNameMaker>
+        <factionIconPath>UI/Icons/Chaos/SlaaneshIcon</factionIconPath>
+        <settlementTexturePath>UI/Icons/Chaos/SlaaneshIcon</settlementTexturePath>
+
+        <configurationListOrderPriority>120</configurationListOrderPriority>
+
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BEWH_ChaosCultistSlaanesh>20</BEWH_ChaosCultistSlaanesh>
+                    <BEWH_DPSlaanesh>5</BEWH_DPSlaanesh>
+                </options>
+            </li>
+            <li>
+                <!-- Base defense -->
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <BEWH_ChaosCultistSlaanesh>5</BEWH_ChaosCultistSlaanesh>
+                    <BEWH_DPSlaanesh>50</BEWH_DPSlaanesh>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful Visit -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <BEWH_ChaosCultistSlaanesh>10</BEWH_ChaosCultistSlaanesh>
+                </options>
+            </li>
+        </pawnGroupMakers>
+    </FactionDef>
+
+
+    <!-- Name of Slaanesh Faction -->
+    <RulePackDef>
+        <defName>BEWH_FactionSlaaneshNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Slaanesh</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- Name of Slaanesh settlements -->
+    <RulePackDef>
+        <defName>BEWH_SlaaneshSettlementNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Slaanesh Shrine</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

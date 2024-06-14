@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Cultist Base -->
+    <PawnKindDef Name="ChaosCultistBasePawn" Abstract="True">
+        <race>Human</race>
+        <initialWillRange>5~50</initialWillRange>
+        <initialResistanceRange>5~50</initialResistanceRange>
+        <invNutrition>2.55</invNutrition>
+        <backstoryCryptosleepCommonality>1.0</backstoryCryptosleepCommonality>
+        <minGenerationAge>19</minGenerationAge>
+        <maxGenerationAge>21</maxGenerationAge>
+        <itemQuality>Normal</itemQuality>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>ImperialFighter</li>
+                    <li>Offworld</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <gearHealthRange>
+            <min>0.6</min>
+            <max>1</max>
+        </gearHealthRange>
+        <weaponMoney>200~1000</weaponMoney>
+        <apparelMoney>
+            <min>0</min>
+            <max>0</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelDisallowTags>
+            <li>Western</li>
+        </apparelDisallowTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>Apparel_Pants</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Duster</li>
+        </apparelRequired>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <countRange>
+                        <min>2</min>
+                        <max>3</max>
+                    </countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>
+                        <min>1</min>
+                        <max>2</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>3~10</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>3~10</range>
+            </li>
+        </skills>
+        <combatPower>40</combatPower>
+    </PawnKindDef>
+
+    <!-- Undivided -->
+    <PawnKindDef ParentName="ChaosCultistBasePawn">
+        <defName>BEWH_ChaosCultistUndivided</defName>
+        <label>Chaos Cultist</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(20,20,20)</apparelColor>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_ChaosCultist>1</BEWH_ChaosCultist>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Khorne -->
+    <PawnKindDef ParentName="ChaosCultistBasePawn">
+        <defName>BEWH_ChaosCultistKhorne</defName>
+        <label>Khorne Cultist</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(110,0,0)</apparelColor>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_KhorneCultist>1</BEWH_KhorneCultist>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Nurgle -->
+    <PawnKindDef ParentName="ChaosCultistBasePawn">
+        <defName>BEWH_ChaosCultistNurgle</defName>
+        <label>Nurgle Cultist</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(65,75,0)</apparelColor>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_NurgleCultist>1</BEWH_NurgleCultist>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Slaanesh -->
+    <PawnKindDef ParentName="ChaosCultistBasePawn">
+        <defName>BEWH_ChaosCultistSlaanesh</defName>
+        <label>Slaanesh Cultist</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(170,0,75)</apparelColor>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_SlaaneshCultist>1</BEWH_SlaaneshCultist>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Tzeentch -->
+    <PawnKindDef ParentName="ChaosCultistBasePawn">
+        <defName>BEWH_ChaosCultistTzeentch</defName>
+        <label>Tzeentch Cultist</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(0,60,155)</apparelColor>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_TzeentchCultist>1</BEWH_TzeentchCultist>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+</Defs>

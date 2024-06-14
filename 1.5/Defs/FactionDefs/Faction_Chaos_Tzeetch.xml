@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="BEWH_ChaosFactionBase">
+        <defName>BEWH_TzeentchFaction</defName>
+        <label>Tzeentch</label>
+        <description>Chaos</description>
+
+        <fixedName>Tzeentch</fixedName>
+
+        <pawnSingular>Tzeentch Worshipper</pawnSingular>
+        <pawnsPlural>Tzeentch Worshippers</pawnsPlural>
+        <leaderTitle>Daemon Lord of Tzeentch</leaderTitle>
+
+        <fixedLeaderKinds>
+            <li>BEWH_DPTzeentch</li>
+        </fixedLeaderKinds>
+
+        <factionNameMaker>BEWH_FactionTzeentchNameMaker</factionNameMaker>
+        <settlementNameMaker>BEWH_TzeentchSettlementNameMaker</settlementNameMaker>
+        <factionIconPath>UI/Icons/Chaos/TzeentchIcon</factionIconPath>
+        <settlementTexturePath>UI/Icons/Chaos/TzeentchIcon</settlementTexturePath>
+
+        <configurationListOrderPriority>120</configurationListOrderPriority>
+
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BEWH_ChaosCultistTzeentch>20</BEWH_ChaosCultistTzeentch>
+                    <BEWH_DPTzeentch>5</BEWH_DPTzeentch>
+                </options>
+            </li>
+            <li>
+                <!-- Base defense -->
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <BEWH_ChaosCultistTzeentch>5</BEWH_ChaosCultistTzeentch>
+                    <BEWH_DPTzeentch>50</BEWH_DPTzeentch>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful Visit -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <BEWH_ChaosCultistTzeentch>10</BEWH_ChaosCultistTzeentch>
+                </options>
+            </li>
+        </pawnGroupMakers>
+    </FactionDef>
+
+
+    <!-- Name of Tzeentch Faction -->
+    <RulePackDef>
+        <defName>BEWH_FactionTzeentchNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Tzeentch</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- Name of Tzeentch settlements -->
+    <RulePackDef>
+        <defName>BEWH_TzeentchSettlementNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Tzeentch Shrine</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

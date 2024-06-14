@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Space Marine Base -->
+
+    <PawnKindDef Name="ChaosMarineBasePawn" Abstract="True">
+        <race>Human</race>
+        <initialWillRange>300~400</initialWillRange>
+        <initialResistanceRange>300~400</initialResistanceRange>
+        <acceptArrestChanceFactor>0</acceptArrestChanceFactor>
+        <invNutrition>2.55</invNutrition>
+        <backstoryCryptosleepCommonality>1.0</backstoryCryptosleepCommonality>
+        <fixedGender>Male</fixedGender>
+        <minGenerationAge>19</minGenerationAge>
+        <maxGenerationAge>48</maxGenerationAge>
+        <itemQuality>Good</itemQuality>
+        <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <allowOldAgeInjuries>false</allowOldAgeInjuries>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>ImperialFighter</li>
+                    <li>Offworld</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <gearHealthRange>
+            <min>1</min>
+            <max>1</max>
+        </gearHealthRange>
+        <weaponMoney>10000~10000</weaponMoney>
+        <apparelMoney>
+            <min>2000</min>
+            <max>9000</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelDisallowTags>
+            <li>Western</li>
+        </apparelDisallowTags>
+        <apparelRequired>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_Pants</li>
+        </apparelRequired>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <countRange>
+                        <min>4</min>
+                        <max>5</max>
+                    </countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineUltratech</thingDef>
+                    <countRange>
+                        <min>2</min>
+                        <max>5</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <weaponTags>
+            <li>SpacerGun</li>
+            <li>UltratechMelee</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <techHediffsRequired>
+            <li>DeathAcidifier</li>
+        </techHediffsRequired>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>9~14</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>9~14</range>
+            </li>
+        </skills>
+        <combatPower>200</combatPower>
+    </PawnKindDef>
+
+    <!-- Undivided Marine -->
+    <PawnKindDef ParentName="ChaosMarineBasePawn">
+        <defName>BEWH_ChaosMarineUndivided</defName>
+        <label>Chaos Marine</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(20,20,20)</apparelColor>
+        <apparelRequired>
+            <li>BEWH_UndividedPowerArmor</li>
+            <li>BEWH_UndividedPowerArmorHelmet</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_ChaosMarine>1</BEWH_ChaosMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Khorne Marine -->
+    <PawnKindDef ParentName="ChaosMarineBasePawn">
+        <defName>BEWH_ChaosMarineKhorne</defName>
+        <label>Khorne Marine</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(110,0,0)</apparelColor>
+        <apparelRequired>
+            <li>BEWH_KhornePowerArmor</li>
+            <li>BEWH_KhornePowerArmorHelmet</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_KhorneMarine>1</BEWH_KhorneMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Nurgle Marine -->
+    <PawnKindDef ParentName="ChaosMarineBasePawn">
+        <defName>BEWH_ChaosMarineNurgle</defName>
+        <label>Nurgle Marine</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(65,75,0)</apparelColor>
+        <apparelRequired>
+            <li>BEWH_NurglePowerArmor</li>
+            <li>BEWH_NurglePowerArmorHelmet</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_NurgleMarine>1</BEWH_NurgleMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Slaanesh Marine -->
+    <PawnKindDef ParentName="ChaosMarineBasePawn">
+        <defName>BEWH_ChaosMarineSlaanesh</defName>
+        <label>Slaanesh Marine</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(170,0,75)</apparelColor>
+        <apparelRequired>
+            <li>BEWH_SlaaneshPowerArmor</li>
+            <li>BEWH_SlaaneshPowerArmorHelmet</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_SlaaneshMarine>1</BEWH_SlaaneshMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!-- Tzeentch Marine -->
+    <PawnKindDef ParentName="ChaosMarineBasePawn">
+        <defName>BEWH_ChaosMarineTzeentch</defName>
+        <label>Tzeentch Marine</label>
+        <defaultFactionType>BEWH_UndividedFaction</defaultFactionType>
+        <apparelColor>(0,60,155)</apparelColor>
+        <apparelRequired>
+            <li>BEWH_TzeentchPowerArmor</li>
+            <li>BEWH_TzeentchPowerArmorHelmet</li>
+        </apparelRequired>
+        <xenotypeSet>
+            <xenotypeChances>
+                <BEWH_TzeentchMarine>1</BEWH_TzeentchMarine>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+</Defs>

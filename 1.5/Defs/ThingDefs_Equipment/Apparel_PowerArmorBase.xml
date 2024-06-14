@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- Power Armor Base -->
+    <ThingDef Name="BEWH_PowerArmorBase" ParentName="ArmorMachineableBase" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>13</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Mass>11</Mass>
+            <Flammability>0.2</Flammability>
+            <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>1</ArmorRating_Blunt>
+            <ArmorRating_Heat>1</ArmorRating_Heat>
+            <Insulation_Cold>30</Insulation_Cold>
+            <Insulation_Heat>30</Insulation_Heat>
+            <EquipDelay>4</EquipDelay>
+        </statBases>
+        <costList>
+            <ComponentSpacer>10</ComponentSpacer>
+            <Plasteel>200</Plasteel>
+            <Steel>400</Steel>
+            <Uranium>50</Uranium>
+        </costList>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+                <li>Hands</li>
+                <li>Feet</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>EVA</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+
+    <!-- Power Armor Helmet Base -->
+    <ThingDef Name="BEWH_PowerArmorHelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>13</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <MaxHitPoints>400</MaxHitPoints>
+            <Mass>11</Mass>
+            <Flammability>0.2</Flammability>
+            <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>1</ArmorRating_Blunt>
+            <ArmorRating_Heat>1</ArmorRating_Heat>
+            <Insulation_Cold>30</Insulation_Cold>
+            <Insulation_Heat>30</Insulation_Heat>
+            <EquipDelay>4</EquipDelay>
+        </statBases>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>50</Plasteel>
+            <Steel>100</Steel>
+            <Uranium>10</Uranium>
+        </costList>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>EVA</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+
+</Defs>

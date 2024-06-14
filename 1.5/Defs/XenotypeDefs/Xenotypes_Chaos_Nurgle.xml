@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Daemon Prince Nurgle -->
+  <XenotypeDef ParentName="DaemonPrinceBase">
+    <defName>BEWH_DPNurgle</defName>
+    <label>Daemon prince of Nurgle</label>
+    <description>Daemon prince of Nurgle, chosen to lead the forces of Nurgle.</description>
+    <descriptionShort>Nurgle Daemon prince.</descriptionShort>
+    <iconPath>UI/Xenotypes/DaemonPrinceNurgleXenoIcon</iconPath>
+    <genes>
+      <li>BEWH_NurgleMark</li>
+      <li>BEWH_NurgleColor</li>
+    </genes>
+  </XenotypeDef>
+
+  <!-- Nurgle Cultist -->
+  <XenotypeDef ParentName="ChaosCultistBase">
+    <defName>BEWH_NurgleCultist</defName>
+    <label>nurgle cultist</label>
+    <description>A pawn led down the road of chaos, this one follows Nurgle, the plague father.</description>
+    <descriptionShort>Nurgle follower.</descriptionShort>
+    <iconPath>UI/Xenotypes/CultistNurgleXenoIcon</iconPath>
+    <genes>
+      <li>BEWH_NurgleMark</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

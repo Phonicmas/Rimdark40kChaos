@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="BEWH_ChaosFactionBase">
+        <defName>BEWH_UndividedFaction</defName>
+        <label>Undivided</label>
+        <description>Chaos</description>
+
+        <fixedName>Chaos Undivided</fixedName>
+
+        <pawnSingular>Undivided Worshipper</pawnSingular>
+        <pawnsPlural>Undivided Worshippers</pawnsPlural>
+        <leaderTitle>Daemon Lord of the Undivided</leaderTitle>
+
+        <fixedLeaderKinds>
+            <li>BEWH_DPUndivided</li>
+        </fixedLeaderKinds>
+
+        <factionNameMaker>BEWH_FactionUndividedNameMaker</factionNameMaker>
+        <settlementNameMaker>BEWH_UndividedSettlementNameMaker</settlementNameMaker>
+        <factionIconPath>UI/Icons/Chaos/ChaosIcon</factionIconPath>
+        <settlementTexturePath>UI/Icons/Chaos/ChaosIcon</settlementTexturePath>
+
+        <configurationListOrderPriority>120</configurationListOrderPriority>
+
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BEWH_ChaosCultistUndivided>20</BEWH_ChaosCultistUndivided>
+                    <BEWH_DPUndivided>5</BEWH_DPUndivided>
+                </options>
+            </li>
+            <li>
+                <!-- Base defense -->
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <BEWH_ChaosCultistUndivided>5</BEWH_ChaosCultistUndivided>
+                    <BEWH_DPUndivided>50</BEWH_DPUndivided>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful Visit -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <BEWH_ChaosCultistUndivided>10</BEWH_ChaosCultistUndivided>
+                </options>
+            </li>
+        </pawnGroupMakers>
+    </FactionDef>
+
+
+    <!-- Name of Undivided Faction -->
+    <RulePackDef>
+        <defName>BEWH_FactionUndividedNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Undivided</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- Name of Undivided settlements -->
+    <RulePackDef>
+        <defName>BEWH_UndividedSettlementNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Undivided Shrine</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

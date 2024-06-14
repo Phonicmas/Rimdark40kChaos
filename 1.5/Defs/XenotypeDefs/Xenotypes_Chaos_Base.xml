@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <XenotypeDef Name="BEWH_ChaosEliteBase" Abstract="True">
+    <inheritable>false</inheritable>
+    <canGenerateAsCombatant>true</canGenerateAsCombatant>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <modExtensions>
+      <li Class="Core40k.DefModExtension_UntradeablePawn" />
+    </modExtensions>
+  </XenotypeDef>
+
+  <!-- Daemon Prince Base -->
+  <XenotypeDef ParentName="BEWH_ChaosEliteBase" Name="DaemonPrinceBase" Abstract="True">
+    <factionlessGenerationWeight>0.05</factionlessGenerationWeight>
+    <combatPowerFactor>3</combatPowerFactor>
+    <genes>
+      <li>BEWH_DaemonMutation</li>
+      <li>BEWH_DaemonTail</li>
+      <li>BEWH_DaemonWings</li>
+      <li>BEWH_DaemonHorns</li>
+      <li>BEWH_DaemonHide</li>
+      <li>Hair_BaldOnly</li>
+      <li>Beard_NoBeardOnly</li>
+    </genes>
+  </XenotypeDef>
+
+  <!-- Choas Cultist Base -->
+  <XenotypeDef Name="ChaosCultistBase" Abstract="True">
+    <canGenerateAsCombatant>true</canGenerateAsCombatant>
+    <factionlessGenerationWeight>0.4</factionlessGenerationWeight>
+    <inheritable>false</inheritable>
+    <combatPowerFactor>1.1</combatPowerFactor>
+  </XenotypeDef>
+
+</Defs>

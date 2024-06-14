@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!-- Biting Tongue Attack -->
+    <HediffDef>
+        <defName>BEWH_NurgleBitingTongueAttack</defName>
+        <label>biting tongue attack</label>
+        <description>The tongue grows to be thick and cylindrical with a maw of biting teeth, much like that of a Great Unclean One.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <everCurableByItem>false</everCurableByItem>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.55, 0.55, 0.05)</defaultLabelColor> <!-- Nurgle Color -->
+        <stages>
+            <li>
+                <becomeVisible>False</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>maw bite</label>
+                        <capacities>
+                            <li>Bite</li>
+                        </capacities>
+                        <power>14</power>
+                        <cooldownTime>1.0</cooldownTime>
+                    </li>
+                    <li>
+                        <label>tongue lash</label>
+                        <capacities>
+                            <li>BEWH_BitingTongueInfect</li>
+                        </capacities>
+                        <power>7</power>
+                        <cooldownTime>1.2</cooldownTime>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+    </HediffDef>
+
+
+    <!-- Biting Tongue Part -->
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>BEWH_BitingTongue</defName>
+        <label>biting tongue</label>
+        <description>The tongue grows to be thick and cylindrical with a maw of biting teeth, much like that of a Great Unclean One.</description>
+        <defaultLabelColor>(0.55, 0.55, 0.05)</defaultLabelColor>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.4</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+
+</Defs>

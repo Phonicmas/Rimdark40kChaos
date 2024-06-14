@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- ===== Daemon ===== -->
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>False</enabled>
+        <mods>
+            <li>Warhammer 40.000 - Chaos</li>
+        </mods>
+        <label>Restore daemon fertility:</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/GeneDef[defName = "BEWH_DaemonMutation"]/statFactors/Fertility</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/GeneDef[defName = "BEWH_DaemonMutation"]/sterilize</xpath>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

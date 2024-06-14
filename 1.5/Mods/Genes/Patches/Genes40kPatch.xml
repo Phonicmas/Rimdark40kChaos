@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- ===== ALWAYS RUN ON MOD ===== -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Warhammer 40.000 - Genes</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <!-- Psyker genes for pawn -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName = "BEWH_DPTzeentch"]/genes</xpath>
+                    <value>
+                        <li>BEWH_DeltaPsyker</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName = "BEWH_TzeentchCultist"]/genes</xpath>
+                    <value>
+                        <li>BEWH_IotaPsyker</li>
+                    </value>
+                </li>
+
+                <!-- Chaos marines for raids -->
+                <!-- Undivided -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName="BEWH_UndividedFaction"]/pawnGroupMakers/*/options</xpath>
+                    <value>
+                        <BEWH_ChaosMarineUndivided>50</BEWH_ChaosMarineUndivided>
+                    </value>
+                </li>
+                <!-- Khorne -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName="BEWH_KhorneFaction"]/pawnGroupMakers/*/options</xpath>
+                    <value>
+                        <BEWH_ChaosMarineKhorne>50</BEWH_ChaosMarineKhorne>
+                    </value>
+                </li>
+                <!-- Nurgle -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName="BEWH_NurgleFaction"]/pawnGroupMakers/*/options</xpath>
+                    <value>
+                        <BEWH_ChaosMarineNurgle>50</BEWH_ChaosMarineNurgle>
+                    </value>
+                </li>
+                <!-- Tzeentch -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName="BEWH_TzeentchFaction"]/pawnGroupMakers/*/options</xpath>
+                    <value>
+                        <BEWH_ChaosMarineTzeentch>50</BEWH_ChaosMarineTzeentch>
+                    </value>
+                </li>
+                <!-- Slaanesh -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName="BEWH_SlaaneshFaction"]/pawnGroupMakers/*/options</xpath>
+                    <value>
+                        <BEWH_ChaosMarineSlaanesh>50</BEWH_ChaosMarineSlaanesh>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

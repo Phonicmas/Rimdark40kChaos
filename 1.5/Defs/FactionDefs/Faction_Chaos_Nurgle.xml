@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="BEWH_ChaosFactionBase">
+        <defName>BEWH_NurgleFaction</defName>
+        <label>Nurgle</label>
+        <description>Chaos</description>
+
+        <fixedName>Nurgle</fixedName>
+
+        <pawnSingular>Nurgle Worshipper</pawnSingular>
+        <pawnsPlural>Nurgle Worshippers</pawnsPlural>
+        <leaderTitle>Daemon Lord of Nurgle</leaderTitle>
+
+        <fixedLeaderKinds>
+            <li>BEWH_DPNurgle</li>
+        </fixedLeaderKinds>
+
+        <factionNameMaker>BEWH_FactionNurgleNameMaker</factionNameMaker>
+        <settlementNameMaker>BEWH_NurgleSettlementNameMaker</settlementNameMaker>
+        <factionIconPath>UI/Icons/Chaos/NurgleIcon</factionIconPath>
+        <settlementTexturePath>UI/Icons/Chaos/NurgleIcon</settlementTexturePath>
+
+        <configurationListOrderPriority>120</configurationListOrderPriority>
+
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BEWH_ChaosCultistNurgle>20</BEWH_ChaosCultistNurgle>
+                    <BEWH_DPNurgle>5</BEWH_DPNurgle>
+                </options>
+            </li>
+            <li>
+                <!-- Base defense -->
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <BEWH_ChaosCultistNurgle>5</BEWH_ChaosCultistNurgle>
+                    <BEWH_DPNurgle>50</BEWH_DPNurgle>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful Visit -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <BEWH_ChaosCultistNurgle>10</BEWH_ChaosCultistNurgle>
+                </options>
+            </li>
+        </pawnGroupMakers>
+    </FactionDef>
+
+
+    <!-- Name of Nurgle Faction -->
+    <RulePackDef>
+        <defName>BEWH_FactionNurgleNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Nurgle</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- Name of Nurgle settlements -->
+    <RulePackDef>
+        <defName>BEWH_NurgleSettlementNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Nurgle Shrine</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

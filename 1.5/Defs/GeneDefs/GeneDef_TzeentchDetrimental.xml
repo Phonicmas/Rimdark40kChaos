@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Everchanging Deficiencies -->
+    <GeneDef ParentName="BEWH_DetrimentalMutationBase">
+        <defName>BEWH_TzeentchEverchangingDeficiencies</defName>
+        <label>mutation: Changing deficiencies</label>
+        <description>The pawn's body has been mutated in such a way that constantly mutate it slightly. This has an adverse effect of randomly harming the pawn's capacities.</description>
+        <iconPath>UI/Icons/Genes/EverchangingDeficiencies</iconPath>
+        <displayOrderInCategory>540</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Pawns body constant mutates, causing detrimental changes that constantly shift.</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathXenogenes>UI/Icons/Genes/GeneBackground_Tzeentch</backgroundPathXenogenes>
+                <hediffToWholeBody>BEWH_TzeentchEverchangingDeficiancies</hediffToWholeBody>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+
+    <!-- Neuron Overload -->
+    <GeneDef ParentName="BEWH_DetrimentalMutationBase">
+        <defName>BEWH_TzeentchNeuronOverload</defName>
+        <label>mutation: Neuron overload</label>
+        <description>The pawn's brain has been mutated, and the sheer overload that accompanied the mutation has left the pawn worse off.</description>
+        <iconPath>UI/Icons/Genes/NeuronOverload</iconPath>
+        <displayOrderInCategory>540</displayOrderInCategory>
+        <aptitudes>
+            <Intellectual>-2</Intellectual>
+        </aptitudes>
+        <statOffsets>
+            <GlobalLearningFactor>-0.15</GlobalLearningFactor>
+            <MentalBreakThreshold>0.25</MentalBreakThreshold>
+        </statOffsets>
+        <modExtensions>
+            <li Class="VanillaGenesExpanded.GeneExtension">
+                <backgroundPathXenogenes>UI/Icons/Genes/GeneBackground_Tzeentch</backgroundPathXenogenes>
+                <hediffToWholeBody>Dementia</hediffToWholeBody>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+</Defs>

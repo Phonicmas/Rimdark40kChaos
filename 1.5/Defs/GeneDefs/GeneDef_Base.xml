@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Gene Category -->
+    <!-- Chaos -->
+    <GeneCategoryDef>
+        <defName>BEWH_GeneCategoryChaos</defName>
+        <label>chaos</label>
+        <displayPriorityInXenotype>537</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <!-- Parent Genes -->
+    <!-- Chaos -->
+    <GeneDef Name="BEWH_ChaosGeneParent" Abstract="True">
+        <displayCategory>BEWH_GeneCategoryChaos</displayCategory>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+    </GeneDef>
+
+    <GeneDef ParentName="BEWH_ChaosGeneParent" Name="BEWH_NoneMutationBase" Abstract="True">
+        <marketValueFactor>1.2</marketValueFactor>
+        <biostatCpx>2</biostatCpx>
+    </GeneDef>
+
+    <!-- Detrimental Base -->
+    <GeneDef ParentName="BEWH_ChaosGeneParent" Name="BEWH_DetrimentalMutationBase" Abstract="True">
+        <marketValueFactor>0.95</marketValueFactor>
+        <biostatMet>-1</biostatMet>
+        <painOffset>0.02</painOffset>
+    </GeneDef>
+    
+    <!-- Beneficial Base -->
+    <GeneDef ParentName="BEWH_ChaosGeneParent" Name="BEWH_BeneficialMutationBase" Abstract="True">
+        <marketValueFactor>1.05</marketValueFactor>
+        <painOffset>0.01</painOffset>
+    </GeneDef>
+
+</Defs>

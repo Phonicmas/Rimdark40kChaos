@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- ===== ALWAYS RUN ON MOD ===== -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Big and Small + Prerequisites Framework</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/GeneDef[defName = "BEWH_DaemonMutation"]/statFactors/VEF_CosmeticBodySize_Multiplier</xpath>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/GeneDef[defName = "BEWH_DaemonMutation"]/statFactors</xpath>
+                    <value>
+                        <SM_BodySizeMultiplier>1.24</SM_BodySizeMultiplier>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+    <!-- ===== TOGGLABLE PATCH ===== -->
+
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>False</enabled>
+        <mods>
+            <li>Warhammer 40.000 - Chaos</li>
+        </mods>
+        <label>Remove Gene Size Increase:</label>
+        <operations>
+
+            <!-- IF Big and small is used -->
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Big and Small + Prerequisites Framework</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/GeneDef[defName = "BEWH_DaemonMutation"]/statFactors/SM_BodySizeMultiplier</xpath>
+                        </li>
+
+                    </operations>
+                </match>
+
+                <nomatch Class="PatchOperationSequence">
+                    <operations>
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>Defs/GeneDef[defName = "BEWH_DaemonMutation"]/statFactors/VEF_CosmeticBodySize_Multiplier</xpath>
+                        </li>
+
+                    </operations>
+                </nomatch>
+            </li>
+
+        </operations>
+    </Operation>
+</Patch>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--===== BLESSING OF KHORNE =====-->
+    <TraitDef>
+        <defName>BEWH_BlessingOfKhorne</defName>
+        <commonality>0</commonality>
+        <forcedPassions>
+            <li>Shooting</li>
+            <li>Melee</li>
+        </forcedPassions>
+        <degreeDatas>
+            <li>
+                <label>blessing of Khorne</label>
+                <description>{PAWN_nameDef} is blessed by Khorne.</description>
+                <statOffsets>
+                    <MeleeHitChance>0.15</MeleeHitChance>
+                    <MeleeWeapon_CooldownMultiplier>-0.05</MeleeWeapon_CooldownMultiplier>
+                    <RangedCooldownFactor>-0.05</RangedCooldownFactor>
+                    <AimingDelayFactor>-0.05</AimingDelayFactor>
+                    <MeleeDamageFactor>0.05</MeleeDamageFactor>
+                </statOffsets>
+                <skillGains>
+                    <Shooting>2</Shooting>
+                    <Melee>2</Melee>
+                </skillGains>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+</Defs>

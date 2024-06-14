@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Daemon Prince Tzeentch -->
+  <XenotypeDef ParentName="DaemonPrinceBase">
+    <defName>BEWH_DPTzeentch</defName>
+    <label>Daemon prince of Tzeentch</label>
+    <description>Daemon prince of Tzeentch, chosen to lead the forces of Tzeentch.</description>
+    <descriptionShort>Tzeentch Daemon prince.</descriptionShort>
+    <iconPath>UI/Xenotypes/DaemonPrinceTzeentchXenoIcon</iconPath>
+    <genes>
+      <li>BEWH_TzeentchMark</li>
+      <li>BEWH_TzeencthColor</li>
+    </genes>
+  </XenotypeDef>
+
+  <!-- Tzeentch Cultist -->
+  <XenotypeDef ParentName="ChaosCultistBase">
+    <defName>BEWH_TzeentchCultist</defName>
+    <label>tzeentch cultist</label>
+    <description>A pawn led down the road of chaos, this one follows Tzeentch, the changer of ways.</description>
+    <descriptionShort>Tzeentch follower.</descriptionShort>
+    <iconPath>UI/Xenotypes/CultistTzeentchXenoIcon</iconPath>
+    <genes>
+      <li>BEWH_TzeentchMark</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

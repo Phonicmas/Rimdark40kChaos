@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Daemon Prince Undivided -->
+  <XenotypeDef ParentName="DaemonPrinceBase">
+    <defName>BEWH_DPUndivided</defName>
+    <label>Daemon Prince of the Undivided</label>
+    <description>Daemon prince of the Undivided, chosen to lead the forces of the Undivided.</description>
+    <descriptionShort>Undivided Daemon prince.</descriptionShort>
+    <iconPath>UI/Xenotypes/DaemonPrinceUndividedXenoIcon</iconPath>
+    <genes>
+      <li>BEWH_UndividedMark</li>
+      <li>BEWH_UndividedColor</li>
+    </genes>
+  </XenotypeDef>
+
+  <!-- Chaos Marine -->
+  <XenotypeDef ParentName="ChaosCultistBase">
+    <defName>BEWH_ChaosCultist</defName>
+    <label>chaos cultist</label>
+    <description>A pawn led down the road of chaos, this one follows no specific god but instead accepts them all.</description>
+    <descriptionShort>chaos follower.</descriptionShort>
+    <iconPath>UI/Xenotypes/CultistChaosXenoIcon</iconPath>
+    <genes>
+      <li>BEWH_UndividedMark</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

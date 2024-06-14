@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="BEWH_ChaosFactionBase">
+        <defName>BEWH_KhorneFaction</defName>
+        <label>Khorne</label>
+        <description>Chaos</description>
+
+        <fixedName>Khorne</fixedName>
+
+        <pawnSingular>Khorne Worshipper</pawnSingular>
+        <pawnsPlural>Khorne Worshippers</pawnsPlural>
+        <leaderTitle>Daemon Lord of Khorne</leaderTitle>
+
+        <fixedLeaderKinds>
+            <li>BEWH_DPKhorne</li>
+        </fixedLeaderKinds>
+
+        <factionNameMaker>BEWH_FactionKhorneNameMaker</factionNameMaker>
+        <settlementNameMaker>BEWH_KhorneSettlementNameMaker</settlementNameMaker>
+        <factionIconPath>UI/Icons/Chaos/KhorneIcon</factionIconPath>
+        <settlementTexturePath>UI/Icons/Chaos/KhorneIcon</settlementTexturePath>
+
+        <configurationListOrderPriority>120</configurationListOrderPriority>
+
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <BEWH_ChaosCultistKhorne>20</BEWH_ChaosCultistKhorne>
+                    <BEWH_DPKhorne>5</BEWH_DPKhorne>
+                </options>
+            </li>
+            <li>
+                <!-- Base defense -->
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <BEWH_ChaosCultistKhorne>5</BEWH_ChaosCultistKhorne>
+                    <BEWH_DPKhorne>50</BEWH_DPKhorne>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful Visit -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <BEWH_ChaosCultistKhorne>10</BEWH_ChaosCultistKhorne>
+                </options>
+            </li>
+        </pawnGroupMakers>
+    </FactionDef>
+
+
+    <!-- Name of Khorne Faction -->
+    <RulePackDef>
+        <defName>BEWH_FactionKhorneNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Khorne</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- Name of Khorne settlements -->
+    <RulePackDef>
+        <defName>BEWH_KhorneSettlementNameMaker</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->Khorne Shrine</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>
