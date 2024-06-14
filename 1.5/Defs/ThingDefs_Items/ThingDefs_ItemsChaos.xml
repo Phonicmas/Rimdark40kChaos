@@ -3,6 +3,7 @@
 
   <!--====== BASE =====-->
   <ThingDef Name ="BEWH_RitualItemBase" ParentName="ResourceBase" Abstract="True">
+    <thingClass>Chaos40k.ChaosGeneGiver</thingClass>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <tradeability>None</tradeability>
@@ -20,27 +21,66 @@
     </thingCategories>
   </ThingDef>
 
-
-
-  <!--====== TZEENTCH =====-->
-  <!-- Ancient Grimoire -->
-
+  <!--====== UNDIVIDED =====-->
+  <!-- Undivided Mix -->
   <ThingDef ParentName="BEWH_RitualItemBase">
-    <defName>BEWH_TzeentchItem</defName>
-    <label>ancient grimoire</label>
-    <description>An ancient grimoire bound in human leather containing esoteric knowledge.</description>
+    <defName>BEWH_UndividedItem</defName>
+    <label>undivided mix</label>
+    <description>A mix of offerings usually given to the individual gods.</description>
     <graphicData>
-      <texPath>Things/Item/AncientGrimoire</texPath>
+      <texPath>Things/Item/UndividedMix</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>500</MarketValue>
+      <MarketValue>600</MarketValue>
     </statBases>
+    <modExtensions>
+      <li Class="Chaos40k.DefModExtension_ChaosItemGeneGiver">
+        <possibleGenesToGive>
+          <li>
+            <key>BEWH_DaemonMutation</key>
+            <value>0.05</value>
+          </li>
+          <li>
+            <key>BEWH_UndividedMark</key>
+            <value>0.5</value>
+          </li>
+          <li>
+            <key>BEWH_MutationAdditionalEye</key>
+            <value>0.9</value>
+          </li>
+          <li>
+            <key>BEWH_MutationAnimalisticLegs</key>
+            <value>0.9</value>
+          </li>
+          <li>
+            <key>BEWH_MutationPrehensileTail</key>
+            <value>0.9</value>
+          </li>
+          <li>
+            <key>BEWH_MutationExtraLeg</key>
+            <value>1</value>
+          </li>
+          <li>
+            <key>BEWH_MutationExtraArm</key>
+            <value>1</value>
+          </li>
+          <li>
+            <key>BEWH_MutationTentacles</key>
+            <value>1</value>
+          </li>
+          <li>
+            <key>BEWH_MutationRottingFlesh</key>
+            <value>1</value>
+          </li>
+        </possibleGenesToGive>
+        <colourGene>BEWH_UndividedColor</colourGene>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!--====== KHORNE =====-->
   <!-- Adorned Bloody Skull -->
-
   <ThingDef ParentName="BEWH_RitualItemBase">
     <defName>BEWH_KhorneItem</defName>
     <label>adorned bloody skull</label>
@@ -52,11 +92,45 @@
     <statBases>
       <MarketValue>250</MarketValue>
     </statBases>
+    <modExtensions>
+      <li Class="Chaos40k.DefModExtension_ChaosItemGeneGiver">
+        <possibleGenesToGive>
+          <li>
+            <key>BEWH_DaemonMutation</key>
+            <value>0.05</value>
+          </li>
+          <li>
+            <key>BEWH_KhorneMark</key>
+            <value>0.5</value>
+          </li>
+          <li>
+            <key>BEWH_KhorneBronzeSkin</key>
+            <value>0.9</value>
+          </li>
+          <li>
+            <key>BEWH_KhorneBoilingBlood</key>
+            <value>0.9</value>
+          </li>
+          <li>
+            <key>BEWH_MutationAnimalisticLegs</key>
+            <value>0.8</value>
+          </li>
+          <li>
+            <key>BEWH_KhorneMonstrousHands</key>
+            <value>1</value>
+          </li>
+          <li>
+            <key>BEWH_KhornateHunger</key>
+            <value>1</value>
+          </li>
+        </possibleGenesToGive>
+        <colourGene>BEWH_KhorneColor</colourGene>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!--====== NURGLE =====-->
   <!-- Disease Filled Brew -->
-
   <ThingDef ParentName="BEWH_RitualItemBase">
     <defName>BEWH_NurgleItem</defName>
     <label>disease filled brew</label>
@@ -68,11 +142,99 @@
     <statBases>
       <MarketValue>375</MarketValue>
     </statBases>
+    <modExtensions>
+      <li Class="Chaos40k.DefModExtension_ChaosItemGeneGiver">
+        <possibleGenesToGive>
+          <li>
+            <key>BEWH_DaemonMutation</key>
+            <value>0.05</value>
+          </li>
+          <li>
+            <key>BEWH_NurgleMark</key>
+            <value>0.5</value>
+          </li>
+          <li>
+            <key>BEWH_NurgleBitingTongue</key>
+            <value>0.9</value>
+          </li>
+          <li>
+            <key>BEWH_NurgleBileSpew</key>
+            <value>0.9</value>
+          </li>
+          <li>
+            <key>BEWH_MutationRottingFlesh</key>
+            <value>0.8</value>
+          </li>
+          <li>
+            <key>BEWH_NurgleGrosslyFat</key>
+            <value>1</value>
+          </li>
+          <li>
+            <key>BEWH_NurgleFoulStench</key>
+            <value>1</value>
+          </li>
+        </possibleGenesToGive>
+        <colourGene>BEWH_NurgleColor</colourGene>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!--====== TZEENTCH =====-->
+  <!-- Ancient Grimoire -->
+  <ThingDef ParentName="BEWH_RitualItemBase">
+    <defName>BEWH_TzeentchItem</defName>
+    <label>ancient grimoire</label>
+    <description>An ancient grimoire bound in human leather containing esoteric knowledge.</description>
+    <graphicData>
+      <texPath>Things/Item/AncientGrimoire</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>500</MarketValue>
+    </statBases>
+    <modExtensions>
+      <li Class="Chaos40k.DefModExtension_ChaosItemGeneGiver">
+        <possibleGenesToGive>
+          <li>
+            <key>BEWH_DaemonMutation</key>
+            <value>0.05</value>
+          </li>
+          <li>
+            <key>BEWH_TzeentchMark</key>
+            <value>0.5</value>
+          </li>
+          <li>
+            <key>BEWH_TzeentchFlamingArm</key>
+            <value>0.9</value>
+          </li>
+          <li>
+            <key>BEWH_TzeentchMassiveIntellect</key>
+            <value>0.9</value>
+          </li>
+          <li>
+            <key>BEWH_MutationAdditionalEye</key>
+            <value>0.8</value>
+          </li>
+          <li>
+            <key>BEWH_MutationTentacles</key>
+            <value>0.8</value>
+          </li>
+          <li>
+            <key>BEWH_TzeentchEverchangingDeficiencies</key>
+            <value>1</value>
+          </li>
+          <li>
+            <key>BEWH_TzeentchNeuronOverload</key>
+            <value>1</value>
+          </li>
+        </possibleGenesToGive>
+        <colourGene>BEWH_TzeencthColor</colourGene>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!--====== SLAANESH =====-->
   <!-- Psychedelic Mix -->
-
   <ThingDef ParentName="BEWH_RitualItemBase">
     <defName>BEWH_SlaaneshItem</defName>
     <label>psychedelic mix</label>
@@ -84,6 +246,41 @@
     <statBases>
       <MarketValue>250</MarketValue>
     </statBases>
+    <modExtensions>
+      <li Class="Chaos40k.DefModExtension_ChaosItemGeneGiver">
+        <possibleGenesToGive>
+          <li>
+            <key>BEWH_DaemonMutation</key>
+            <value>0.05</value>
+          </li>
+          <li>
+            <key>BEWH_SlaaneshMark</key>
+            <value>0.5</value>
+          </li>
+          <li>
+            <key>BEWH_SlaaneshUnfathomableGaze</key>
+            <value>0.9</value>
+          </li>
+          <li>
+            <key>BEWH_SlaaneshAlluringPresence</key>
+            <value>0.9</value>
+          </li>
+          <li>
+            <key>BEWH_MutationPrehensileTail</key>
+            <value>0.8</value>
+          </li>
+          <li>
+            <key>BEWH_SlaaneshJealousVisage</key>
+            <value>1</value>
+          </li>
+          <li>
+            <key>BEWH_SlaaneshDeadenedSenses</key>
+            <value>1</value>
+          </li>
+        </possibleGenesToGive>
+        <colourGene>BEWH_SlaaneshColor</colourGene>
+      </li>
+    </modExtensions>
   </ThingDef>
 
 </Defs>

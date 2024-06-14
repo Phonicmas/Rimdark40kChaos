@@ -5,6 +5,7 @@
     <GeneDef ParentName="BEWH_BeneficialMutationBase">
         <defName>BEWH_KhorneBronzeSkin</defName>
         <label>mutation: Bronze skin</label>
+        <labelShortAdj>bronze skin</labelShortAdj>
         <description>The pawn's body has mutated to be gilded in bronze, giving them extra resistance against weaponry.</description>
         <iconPath>UI/Icons/Genes/BronzeSkin</iconPath>
         <displayOrderInCategory>240</displayOrderInCategory>
@@ -29,6 +30,7 @@
     <GeneDef ParentName="BEWH_BeneficialMutationBase">
         <defName>BEWH_KhorneBoilingBlood</defName>
         <label>mutation: Boiling blood</label>
+        <labelShortAdj>boiling blood</labelShortAdj>
         <description>The pawn's blood has mutated to be constantly boiling. Miraculously this does not hurt the pawn, however anyone melee attacking the pawn will be burned from the boiling blood.</description>
         <iconPath>UI/Icons/Genes/BoilingBlood</iconPath>
         <displayOrderInCategory>240</displayOrderInCategory>

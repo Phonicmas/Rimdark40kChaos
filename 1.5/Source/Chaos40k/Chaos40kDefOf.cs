@@ -9,6 +9,10 @@ namespace Chaos40k
     {
 
         public static GeneDef BEWH_DaemonMutation;
+        public static GeneDef BEWH_DaemonHide;
+        public static GeneDef BEWH_DaemonWings;
+        public static GeneDef BEWH_DaemonTail;
+        public static GeneDef BEWH_DaemonHorns;
 
         public static GeneDef BEWH_UndividedMark;
         public static GeneDef BEWH_SlaaneshMark;
@@ -28,6 +32,8 @@ namespace Chaos40k
         public static XenotypeIconDef BEWH_DPTzeentchIcon;
         public static XenotypeIconDef BEWH_DPNurgleIcon;
         public static XenotypeIconDef BEWH_DPKhorneIcon;
+
+        public static JobDef BEWH_UseChaosItem;
 
         static Chaos40kDefOf()
         {

@@ -5,6 +5,7 @@
     <GeneDef ParentName="BEWH_DetrimentalMutationBase">
         <defName>BEWH_TzeentchEverchangingDeficiencies</defName>
         <label>mutation: Changing deficiencies</label>
+        <labelShortAdj>changing deficiencies</labelShortAdj>
         <description>The pawn's body has been mutated in such a way that constantly mutate it slightly. This has an adverse effect of randomly harming the pawn's capacities.</description>
         <iconPath>UI/Icons/Genes/EverchangingDeficiencies</iconPath>
         <displayOrderInCategory>540</displayOrderInCategory>
@@ -24,6 +25,7 @@
     <GeneDef ParentName="BEWH_DetrimentalMutationBase">
         <defName>BEWH_TzeentchNeuronOverload</defName>
         <label>mutation: Neuron overload</label>
+        <labelShortAdj>neuron overload</labelShortAdj>
         <description>The pawn's brain has been mutated, and the sheer overload that accompanied the mutation has left the pawn worse off.</description>
         <iconPath>UI/Icons/Genes/NeuronOverload</iconPath>
         <displayOrderInCategory>540</displayOrderInCategory>

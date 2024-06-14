@@ -5,6 +5,7 @@
     <GeneDef ParentName="BEWH_BeneficialMutationBase">
         <defName>BEWH_TzeentchFlamingArm</defName>
         <label>mutation: Flaming arm</label>
+        <labelShortAdj>flaming arm</labelShortAdj>
         <description>The pawn's arm has been mutated with the flaming arm of a Flamer of Tzeentch, and is able to project fiery blasts and scorch nearby enemies upon contact.</description>
         <iconPath>UI/Icons/Genes/FlamingArm</iconPath>
         <displayOrderInCategory>540</displayOrderInCategory>
@@ -34,6 +35,7 @@
     <GeneDef ParentName="BEWH_BeneficialMutationBase">
         <defName>BEWH_TzeentchMassiveIntellect</defName>
         <label>mutation: Massive intellect</label>
+        <labelShortAdj>massive intellect</labelShortAdj>
         <description>The pawn's brain has mutated and as such the pawn is able to comprehend many more things, sometimes too many.</description>
         <iconPath>UI/Icons/Genes/MassiveIntellect</iconPath>
         <displayOrderInCategory>540</displayOrderInCategory>

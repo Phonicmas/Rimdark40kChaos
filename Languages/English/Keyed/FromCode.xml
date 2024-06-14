@@ -1,87 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <ResearchNotCompleted>Does not have required research: {0}.</ResearchNotCompleted>
-  <GeneElevationComplete>{0} has been elevated to {1}.</GeneElevationComplete>
-  <GeneElevationProgress>{0} has moved one step close to being a {1}.</GeneElevationProgress>
-  <CurrentlyElevatingTo>{0} is being elavated to {1}.</CurrentlyElevatingTo>
-  <ElevatingPausedNoPower>Building has no power, process has been paused.</ElevatingPausedNoPower>
-  <NotEnoughFuelPresent>Building needs {0} amount of geneseed capsules to operate on {1}.</NotEnoughFuelPresent>
-  <GenesCannotBeElevated>{0}'s genes cannot be elevated any more.</GenesCannotBeElevated>
-  <InsertPersonGeneseedGenetorDesc>Insert a person into the automated genetor. It will use genetic material from provided geneseed capsules to slowly elevate the pawns genes.</InsertPersonGeneseedGenetorDesc>
+  <!-- Mod setting related-->
+  <ModSettingsNameChaos>Warhammer 40k - Chaos</ModSettingsNameChaos>
 
-  <SpaceMarineTime>Space marine cycle time.</SpaceMarineTime>
-  <PrimarisMarineTime>Primaris marine cycle time.</PrimarisMarineTime>
-  <CustodesTime>Custodes cycle time.</CustodesTime>
-  <PrimarchTime>Primarch cycle time.</PrimarchTime>
+  <!-- Chaos gene giver item -->
+  <UseChaosItem>Try imbue {0} with power by using {1}</UseChaosItem>
+  <NoMorePossibleGifts>Using this item will have no effect on {0}</NoMorePossibleGifts>
 
-  <WarpTime>Warp adjuster cycle time.</WarpTime>
-  <IncreasingEffectiveness>{0}'s {1} potential is being increased.</IncreasingEffectiveness>
-  <EnhanceComplete>{0}'s {1} potential has been increased.</EnhanceComplete>
-  <CannotIncreaseEffectiveness>Cannot increase {0}'s potential, it is already maxed.</CannotIncreaseEffectiveness>
-  <MayNotHaveGenePotential>Cannot increase {0}'s {1} potential. {0} may not have the {2} gene.</MayNotHaveGenePotential>
-
-  <CommandCancelProcedure>Cancel procedure</CommandCancelProcedure>
-  <CommandCancelProcedureDesc>Cancel the procedure. The contained person will be ejected.</CommandCancelProcedureDesc>
-  <InsertPersonWarpAdjusterDesc>Insert a person into the device. It will use {0} potential material from provided capsules.</InsertPersonWarpAdjusterDesc>
-
-  <NoValidPawns>No valid people</NoValidPawns>
-
-  <DevFinishProcedure>DEV: Finish procedure</DevFinishProcedure>
-
-  <PotentialHarvestKillChance>Chance to kill when harvesting potential.</PotentialHarvestKillChance>
-
-  <GenetorCycleTimeSM>Genetor cycle time (Space Marine): {0} days</GenetorCycleTimeSM>
-  <GenetorCycleTimePM>Genetor cycle time (Primaris Marine): {0} days</GenetorCycleTimePM>
-  <GenetorCycleTimeCS>Genetor cycle time (Custodes): {0} days</GenetorCycleTimeCS>
-  <GenetorCycleTimePMH>Genetor cycle time (Primarch): {0} days</GenetorCycleTimePMH>
-
-  <WarpAdjusterCycleTime>Warp adjuster cycle time: {0} days</WarpAdjusterCycleTime>
-
-  <KillChanceOnHarvest>Kill chance on psychic or blank potential harvesting: {0}%</KillChanceOnHarvest>
-
-  <CheckVEFPatches>Remember to check Vanilla Expanded Framework toggable patches for more settings!</CheckVEFPatches>
-
-  <progenoidHarvestsAllXenogenes>Enabling this will allow the harvest of the progenoid gland to include all xenogenes of the pawn instead of only space marine genes.</progenoidHarvestsAllXenogenes>
-
-  <psykerPariahBirth>Enabling this will allow children to be rarely and randomly born as psykers and pariahs.</psykerPariahBirth>
-
-  <psychicPhenomena>Enabling this will make psykers who are experiencing mental breakdowns create a psychic phenoma.</psychicPhenomena>
-
-  <UnbreakingLoyaltySpaceMarine>Enabling this makes all space marines unrecruitable and unable to be enslaved, meaning you cannot imprison them and then recruit or enslave them.</UnbreakingLoyaltySpaceMarine>
-
-  <ModSettingsNameGenes>Warhammer 40k - Genes</ModSettingsNameGenes>
-
-  <SpaceMarine>Space marine</SpaceMarine>
-  <PrimarisMarine>Primaris marine</PrimarisMarine>
-  <Custodes>Custodes</Custodes>
-  <Primarch>Primarch</Primarch>
-
-  <AddsGene>Adds Gene: {0}</AddsGene>
-
-  <MustBeSpaceMarine>Must be a Space Marine</MustBeSpaceMarine>
-
-  <CannotRecruitLetter>Unbreakable Loyalty</CannotRecruitLetter>
-  <CannotRecruitMessage>{1} tried to recruit {0}, but {0}'s unbreakable loyalty to their faction made them resist all attempts.\n\n{0} cannot be recruited.</CannotRecruitMessage>
-  <CannotEnslaveMessage>{1} tried to enslave {0}, but {0}'s unbreakable loyalty to their faction made them resist all attempts.\n\n{0} cannot be enslaved.</CannotEnslaveMessage>
-
-  <NaturalBornXLetter>Natural Born {0}</NaturalBornXLetter>
-  <NaturalBornXMessage>From the moment {0} became pregnant something felt off, something that has finally come to light. It seems that {1} has been born as a natural {2}.</NaturalBornXMessage>
-
-  <PsychicPhenomena>Psychic Phenomena</PsychicPhenomena>
-  <PerilsOfTheWarp>Perils of the Warp</PerilsOfTheWarp>
-
-  <Annihilation>A psychic blast surged through {0} and into the world, causing a warp explosion completely annihilating {0} and severely damaging everything around them.</Annihilation>
-  <DaemonHost>A strong link was established between {0} and one of the chaos gods, allowing them to send in some daemons.</DaemonHost>
-  <UncontrollablePowers>In a temporary loss of control over their powers, {0} caused a warp explosion, causing damage to everyone near them.</UncontrollablePowers>
-  <PsychicComa>Overwhelmed by the warp made {0} fall into a psychic coma.</PsychicComa>
-  <PsychicConnectionSevered>In an instant {0} no longer felt any connection to the warp, as if completely cut off.</PsychicConnectionSevered>
-  <BloodRain>As if a cruel joke, blood suddenly starts raining.</BloodRain>
-  <PlantRot>All plant life seems to rot in {0} presence, leaving it lifeless.</PlantRot>
-
-  <SMGeneseedExtractionNotResearched>Space Marine geneseed extraction not researched</SMGeneseedExtractionNotResearched>
-  <NoProgenoidGlands>Does not have any progenoid glands</NoProgenoidGlands>
-  <SecondaryGlandsAlreadyHarvested>Secondary progenoid glands already harvested</SecondaryGlandsAlreadyHarvested>
-  <PMGeneseedExtractionNotResearched>Primaris Marine geneseed extraction not researched</PMGeneseedExtractionNotResearched>
+  <ChaosItemLetterTitle>Gift of Chaos</ChaosItemLetterTitle>
+  <ChaosItemLetterMessage>{0} have recieved the following gift: {1}</ChaosItemLetterMessage>
 
 </LanguageData>

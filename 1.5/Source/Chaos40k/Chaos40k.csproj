@@ -61,6 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JobDriver_UseChaosItem.cs" />
+    <Compile Include="ChaosGeneGiver.cs" />
+    <Compile Include="DefModExtension_ChaosItemGeneGiver.cs" />
     <Compile Include="ThoughtWorker_SituationalThoughtMutation.cs" />
     <Compile Include="DefModExtension_SituationalThought.cs" />
     <Compile Include="Comps\CompAbilityEffect_BileSpew.cs" />

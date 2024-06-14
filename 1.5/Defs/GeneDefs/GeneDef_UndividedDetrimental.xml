@@ -5,6 +5,7 @@
     <GeneDef ParentName="BEWH_DetrimentalMutationBase">
         <defName>BEWH_MutationExtraLeg</defName>
         <label>mutation: Extra leg</label>
+        <labelShortAdj>extra leg</labelShortAdj>
         <description>The pawn has mutated an extra leg. It always seems to be a hindrance.</description>
         <iconPath>UI/Icons/Genes/ExtraLeg</iconPath>
         <displayOrderInCategory>140</displayOrderInCategory>
@@ -23,6 +24,7 @@
     <GeneDef ParentName="BEWH_DetrimentalMutationBase">
         <defName>BEWH_MutationExtraArm</defName>
         <label>mutation: Extra arm</label>
+        <labelShortAdj>extra arm</labelShortAdj>
         <description>The pawn has mutated an extra arm. It always seems to be a hindrance.</description>
         <iconPath>UI/Icons/Genes/ExtraArm</iconPath>
         <displayOrderInCategory>140</displayOrderInCategory>
@@ -44,6 +46,7 @@
     <GeneDef ParentName="BEWH_DetrimentalMutationBase">
         <defName>BEWH_MutationTentacles</defName>
         <label>mutation: Tentacles</label>
+        <labelShortAdj>tentacles</labelShortAdj>
         <description>The pawn has mutated useless tentacles on their body, which always get in the way.</description>
         <iconPath>UI/Icons/Genes/TentaclesWholeBody</iconPath>
         <displayOrderInCategory>140</displayOrderInCategory>
@@ -85,6 +88,7 @@
     <GeneDef ParentName="BEWH_DetrimentalMutationBase">
         <defName>BEWH_MutationRottingFlesh</defName>
         <label>mutation: Rotting flesh</label>
+        <labelShortAdj>rotting flesh</labelShortAdj>
         <description>The pawn's body has mutated. Every now and then, rancid flesh sloughs from this body, exposing new rotting areas beneath.</description>
         <iconPath>UI/Icons/Genes/RottingBody</iconPath>
         <displayOrderInCategory>140</displayOrderInCategory>

@@ -5,6 +5,7 @@
     <GeneDef ParentName="BEWH_BeneficialMutationBase">
         <defName>BEWH_SlaaneshUnfathomableGaze</defName>
         <label>mutation: Unfathomable gaze</label>
+        <labelShortAdj>unfathomable gaze</labelShortAdj>
         <description>The pawn's eyes has mutated, giving them the ability to temporary stun anyone looking at them as they're mesmerized by the pawns eyes.</description>
         <iconPath>UI/Icons/Genes/UnfathomableGaze</iconPath>
         <displayOrderInCategory>440</displayOrderInCategory>
@@ -23,6 +24,7 @@
     <GeneDef ParentName="BEWH_BeneficialMutationBase">
         <defName>BEWH_SlaaneshAlluringPresence</defName>
         <label>mutation: Alluring presence</label>
+        <labelShortAdj>alluring presence</labelShortAdj>
         <description>This pawn has mutated aesthetically pleasing features and been instilled with great charm.</description>
         <iconPath>UI/Icons/Genes/AlluringPresence</iconPath>
         <displayOrderInCategory>440</displayOrderInCategory>

@@ -219,4 +219,123 @@
         </products>
     </RecipeDef>
 
+    <!--====== UNDIVIDED =====-->
+    <!-- Undivided Ritual Item -->
+    <RecipeDef ParentName="BEWH_ChaosRecipeBase">
+        <defName>BEWH_MakeUndividedItem</defName>
+        <label>make undivided mix</label>
+        <description>Make an undivided mix.</description>
+        <jobString>Making an undivided mix.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>HemogenPack</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                    <customSummary>Fresh humanlike corpse</customSummary>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Leather_Human</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RawHops</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SmokeleafLeaves</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychoidLeaves</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>HemogenPack</li>
+                <li>Gold</li>
+                <li>Silver</li>
+                <li>Steel</li>
+                <li>WoodLog</li>
+                <li>Leather_Human</li>
+                <li>RawHops</li>
+                <li>SmokeleafLeaves</li>
+                <li>PsychoidLeaves</li>
+            </thingDefs>
+            <categories>
+                <li>Corpses</li>
+            </categories>
+            <disallowedCategories>
+                <li>CorpsesMechanoid</li>
+                <li>CorpsesAnimal</li>
+                <li>CorpsesInsect</li>
+            </disallowedCategories>
+            <specialFiltersToDisallow>
+                <li>AllowRotten</li>
+            </specialFiltersToDisallow>
+        </fixedIngredientFilter>
+        <products>
+            <BEWH_UndividedItem>1</BEWH_UndividedItem>
+        </products>
+    </RecipeDef>
+
 </Defs>
