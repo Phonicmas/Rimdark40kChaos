@@ -8,21 +8,15 @@
     <baseCost>3000</baseCost>
   </ResearchProjectDef>
 
-  <!-- Chaos Research High Tech Base -->
-  <ResearchProjectDef Name="BEWH_ChaosResearchHighTechBase" ParentName="BEWH_ChaosResearchBase" Abstract="True">
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-  </ResearchProjectDef>
+
 
   <!-- Undivided -->
   <ResearchProjectDef ParentName="BEWH_ChaosResearchBase">
     <defName>BEWH_UndividedResearch</defName>
-    <label>Secrets of the Undivided</label>
-    <description>Unlocks the secrets of the Undivided necessary to begin the path to chaos.</description>
-    <researchViewX>3</researchViewX>
-    <researchViewY>1.5</researchViewY>
+    <label>Secrets of the Chaos</label>
+    <description>Unlocks the secrets of the Chaos necessary to begin the path to chaos.</description>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 
   <!-- Slaanesh -->
@@ -33,8 +27,8 @@
     <prerequisites>
       <li>BEWH_UndividedResearch</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>2.5</researchViewY>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
   </ResearchProjectDef>
 
   <!-- Nurgle -->
@@ -45,8 +39,8 @@
     <prerequisites>
       <li>BEWH_UndividedResearch</li>
     </prerequisites>
-    <researchViewX>3</researchViewX>
-    <researchViewY>0.5</researchViewY>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2</researchViewY>
   </ResearchProjectDef>
 
   <!-- Khorne -->
@@ -57,8 +51,8 @@
     <prerequisites>
       <li>BEWH_UndividedResearch</li>
     </prerequisites>
-    <researchViewX>2</researchViewX>
-    <researchViewY>1.5</researchViewY>
+    <researchViewX>6</researchViewX>
+    <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 
   <!-- Tzeentch -->
@@ -70,7 +64,7 @@
       <li>BEWH_UndividedResearch</li>
     </prerequisites>
     <researchViewX>4</researchViewX>
-    <researchViewY>1.5</researchViewY>
+    <researchViewY>1</researchViewY>
   </ResearchProjectDef>
 
 </Defs>

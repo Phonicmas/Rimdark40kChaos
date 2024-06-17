@@ -215,6 +215,11 @@
                 <overrideMeshSize>(1, 1)</overrideMeshSize>
                 <parentTagDef>Body</parentTagDef>
                 <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <visibleFacing>
+                    <li>North</li>
+                    <li>East</li>
+                    <li>West</li>
+                </visibleFacing>
                 <drawData>
                     <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
                     <defaultData>
@@ -224,9 +229,6 @@
                         <layer>90</layer>
                         <offset>(0.05, 0.2, -0.2)</offset>
                     </dataNorth>
-                    <dataSouth>
-                        <offset>(-0.1, 0, -0.25)</offset>
-                    </dataSouth>
                     <dataEast>
                         <offset>(-0.5, -0.11, -0.05)</offset>
                     </dataEast>
