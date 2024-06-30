@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <DesignatorDropdownGroupDef>
+        <defName>BEWH_Altars</defName>
+    </DesignatorDropdownGroupDef>
+
+    <!-- Base -->
+    <ThingDef ParentName="BuildingBase" Name="BEWH_ChaosAlterBase" Abstract="True">
+        <thingClass>Building_WorkTable</thingClass>
+        <altitudeLayer>Building</altitudeLayer>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,2)</drawSize>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>20000</WorkToBuild>
+            <Beauty>10</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <defaultStuff>BlocksGranite</defaultStuff>
+        <costStuffCount>20</costStuffCount>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <useHitPoints>false</useHitPoints>
+        <size>(3,2)</size>
+        <designationCategory>Production</designationCategory>
+        <uiOrder>2000</uiOrder>
+        <passability>PassThroughOnly</passability>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <sowTag>SupportPlantsOnly</sowTag>
+            <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+            <ai_chillDestination>false</ai_chillDestination>
+            <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+            <buildingTags>
+                <li>Production</li>
+            </buildingTags>
+        </building>
+        <designationHotKey>Misc1</designationHotKey>
+        <placeWorkers>
+            <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <designatorDropdown>BEWH_Altars</designatorDropdown>
+    </ThingDef>
+
+    <!-- Undivided -->
+    <ThingDef ParentName="BEWH_ChaosAlterBase">
+        <defName>BEWH_UndividedAltar</defName>
+        <label>undivided altar</label>
+        <description>A place for dedicating yourself to the great Undivided.</description>
+        <graphicData>
+            <texPath>Things/Building/Undivided/UndividedAltar2x3</texPath>
+        </graphicData>
+        <researchPrerequisites>
+            <li>BEWH_UndividedResearch</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <!-- Khorne -->
+    <ThingDef ParentName="BEWH_ChaosAlterBase">
+        <defName>BEWH_KhorneAltar</defName>
+        <label>khorne altar</label>
+        <description>A place for dedicating yourself to Khorne.</description>
+        <graphicData>
+            <texPath>Things/Building/Khorne/KhorneAltar2x3</texPath>
+        </graphicData>
+        <researchPrerequisites>
+            <li>BEWH_KhorneResearch</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <!-- Nurgle -->
+    <ThingDef ParentName="BEWH_ChaosAlterBase">
+        <defName>BEWH_NurgleAltar</defName>
+        <label>nurgle altar</label>
+        <description>A place for dedicating yourself to Nurgle.</description>
+        <graphicData>
+            <texPath>Things/Building/Nurgle/NurgleAltar2x3</texPath>
+        </graphicData>
+        <researchPrerequisites>
+            <li>BEWH_NurgleResearch</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <!-- Slaanesh -->
+    <ThingDef ParentName="BEWH_ChaosAlterBase">
+        <defName>BEWH_SlaaneshAltar</defName>
+        <label>slaanesh altar</label>
+        <description>A place for dedicating yourself to Slaanesh.</description>
+        <graphicData>
+            <texPath>Things/Building/Slaanesh/SlaaneshAltar2x3</texPath>
+        </graphicData>
+        <researchPrerequisites>
+            <li>BEWH_SlaaneshResearch</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <!-- Tzeentch -->
+    <ThingDef ParentName="BEWH_ChaosAlterBase">
+        <defName>BEWH_TzeentchAltar</defName>
+        <label>tzeentch altar</label>
+        <description>A place for dedicating yourself to Tzeentch.</description>
+        <graphicData>
+            <texPath>Things/Building/Tzeentch/TzeentchAltar2x3</texPath>
+        </graphicData>
+        <researchPrerequisites>
+            <li>BEWH_TzeentchResearch</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+</Defs>

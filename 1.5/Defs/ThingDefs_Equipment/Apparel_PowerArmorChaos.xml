@@ -183,12 +183,12 @@
         <label>Undivided Power Armor</label>
         <description>Power armor of the Undivided Space Marines</description>
         <graphicData>
-            <texPath>Things/Armor/Chaos/Undivided/ImperiumPowerArmor</texPath>
+            <texPath>Things/Armor/Chaos/Undivided/UndividedPowerArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <apparel>
-            <wornGraphicPath>Things/Armor/Chaos/Undivided/ImperiumPowerArmor</wornGraphicPath>
+            <wornGraphicPath>Things/Armor/Chaos/Undivided/UndividedPowerArmor</wornGraphicPath>
             <tags>
                 <li>UndividedPowerArmorHelmet</li>
             </tags>
@@ -204,12 +204,12 @@
         <label>Undivided Power Helmet</label>
         <description>Standard issue helmet of the Undivided Space Marines</description>
         <graphicData>
-            <texPath>Things/Headgear/Chaos/Undivided/ImperiumHelmet</texPath>
+            <texPath>Things/Headgear/Chaos/Undivided/UndividedHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <apparel>
-            <wornGraphicPath>Things/Headgear/Chaos/Undivided/ImperiumHelmet</wornGraphicPath>
+            <wornGraphicPath>Things/Headgear/Chaos/Undivided/UndividedHelmet</wornGraphicPath>
             <tags>
                 <li>UndividedPowerArmorHelmet</li>
             </tags>

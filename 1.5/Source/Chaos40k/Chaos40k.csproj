@@ -40,8 +40,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Core40k">
-      <HintPath>..\..\..\..\Warhammer40kFramework\1.5\Assemblies\Core40k.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\Rimdark40kFramework\1.5\Assemblies\Core40k.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,17 +54,27 @@
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
     <Reference Include="VFECore">
       <HintPath>..\..\..\..\..\..\..\workshop\content\294100\2023507013\1.4\Assemblies\VFECore.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JobDriver_UseChaosItem.cs" />
+    <Compile Include="DefMods\DefModExtension_ResummonDaemonPrince.cs" />
+    <Compile Include="GeneRelated\Dialog_ChooseDaemon.cs" />
+    <Compile Include="HarmonyPatches\HarmonyPatch_RequiresDeadDaemonPatch.cs" />
+    <Compile Include="Workers\Recipe_SummonDeadDemon.cs" />
+    <Compile Include="Workers\JobDriver_UseChaosItem.cs" />
     <Compile Include="ChaosGeneGiver.cs" />
-    <Compile Include="DefModExtension_ChaosItemGeneGiver.cs" />
-    <Compile Include="ThoughtWorker_SituationalThoughtMutation.cs" />
-    <Compile Include="DefModExtension_SituationalThought.cs" />
+    <Compile Include="DefMods\DefModExtension_ChaosItemGeneGiver.cs" />
+    <Compile Include="Workers\ThoughtWorker_SituationalThoughtMutation.cs" />
+    <Compile Include="DefMods\DefModExtension_SituationalThought.cs" />
     <Compile Include="Comps\CompAbilityEffect_BileSpew.cs" />
     <Compile Include="Comps\CompAbilityEffect_FlamingArmBlast.cs" />
     <Compile Include="Comps\CompProperties_UnfathomableGaze.cs" />
@@ -81,7 +90,7 @@
     <Compile Include="HarmonyPatches\HarmonyPatch_KhornateHungerPatch.cs" />
     <Compile Include="HarmonyPatches\HarmonyPatch_BoilingBloodPatch.cs" />
     <Compile Include="GeneRelated\Gene_DaemonPrince.cs" />
-    <Compile Include="GeneRelated\GameComponent_Resurrection.cs" />
+    <Compile Include="Comps\GameComponent_DaemonPrince.cs" />
     <Compile Include="Chaos40kMod.cs" />
     <Compile Include="Chaos40kModSettings.cs" />
     <Compile Include="Chaos40kUtils.cs" />

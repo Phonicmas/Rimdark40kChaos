@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef>
+        <defName>BEWH_SummonDeadDemon</defName>
+        <label>summon dead daemon prince</label>
+        <description>Summon a dead daemon prince from the warp</description>
+        <jobString>Summoning dead demon prince.</jobString>
+        <workerClass>Chaos40k.Recipe_SummonDeadDemon</workerClass>
+        <workAmount>200</workAmount>
+        <researchPrerequisite>BEWH_UndividedResearch</researchPrerequisite>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <recipeUsers>
+            <li>BEWH_UndividedAltar</li>
+            <li>BEWH_KhorneAltar</li>
+            <li>BEWH_NurgleAltar</li>
+            <li>BEWH_SlaaneshAltar</li>
+            <li>BEWH_TzeentchAltar</li>
+        </recipeUsers>
+        <workSkill>Intellectual</workSkill>
+        <displayPriority>0</displayPriority>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                    <customSummary>Fresh humanlike corpse</customSummary>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Corpses</li>
+            </categories>
+            <disallowedCategories>
+                <li>CorpsesMechanoid</li>
+                <li>CorpsesAnimal</li>
+                <li>CorpsesInsect</li>
+            </disallowedCategories>
+            <specialFiltersToDisallow>
+                <li>AllowRotten</li>
+            </specialFiltersToDisallow>
+        </fixedIngredientFilter>
+        <products>
+            <BEWH_DaemonPrince>1</BEWH_DaemonPrince>
+        </products>
+        <skillRequirements>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+        <modExtensions>
+            <li Class="Core40k.DefModExtension_DontPlaceProduct" />
+            <li Class="Chaos40k.DefModExtension_ResummonDaemonPrince" />
+        </modExtensions>
+    </RecipeDef>
+
+</Defs>

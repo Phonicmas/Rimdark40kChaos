@@ -5,7 +5,7 @@
   <ResearchProjectDef Name="BEWH_ChaosResearchBase" Abstract="True">
     <techLevel>Neolithic</techLevel>
     <tab>BEWH_WH40kTab</tab>
-    <baseCost>3000</baseCost>
+    <baseCost>10000</baseCost>
   </ResearchProjectDef>
 
 

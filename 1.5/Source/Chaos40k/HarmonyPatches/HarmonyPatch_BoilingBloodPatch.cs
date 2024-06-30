@@ -7,7 +7,7 @@ namespace Chaos40k
     [HarmonyPatch(typeof(Verb_MeleeAttack), "TryCastShot")]
     public class BoilingBloodPatch
     {
-        public static void Postfix(bool __result, Verb_MeleeAttack __instance)
+        public static void Postfix(ref bool __result, Verb_MeleeAttack __instance)
         {
             if (!__result)
             {

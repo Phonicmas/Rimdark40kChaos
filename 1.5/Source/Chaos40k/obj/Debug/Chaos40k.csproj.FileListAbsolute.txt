@@ -2,3 +2,8 @@ C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kChaos\1.5\Assemblies\Chaos40
 C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kChaos\1.5\Source\Chaos40k\obj\Debug\Chaos40k.csproj.AssemblyReference.cache
 C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kChaos\1.5\Source\Chaos40k\obj\Debug\Chaos40k.csproj.CoreCompileInputs.cache
 C:\Steam\steamapps\common\RimWorld\Mods\Warhammer40kChaos\1.5\Source\Chaos40k\obj\Debug\Chaos40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Rimdark40kChaos\1.5\Source\Chaos40k\obj\Debug\Chaos40k.csproj.AssemblyReference.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Rimdark40kChaos\1.5\Source\Chaos40k\obj\Debug\Chaos40k.csproj.CoreCompileInputs.cache
+C:\Steam\steamapps\common\RimWorld\Mods\Rimdark40kChaos\1.5\Source\Chaos40k\obj\Debug\Chaos40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Rimdark40kChaos\1.5\Assemblies\Chaos40k.dll
+C:\Steam\steamapps\common\RimWorld\Mods\Rimdark40kChaos\1.5\Source\Chaos40k\obj\Debug\Chaos40k.csproj.CopyComplete

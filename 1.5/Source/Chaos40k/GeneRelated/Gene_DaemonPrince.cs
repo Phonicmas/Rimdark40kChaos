@@ -33,8 +33,7 @@ namespace Chaos40k
                 return;
             }
             GameComponent_DaemonPrince gameComp = Current.Game.GetComponent<GameComponent_DaemonPrince>();
-            pawn.Corpse.Strip();
-            gameComp.pawns.Add(pawn, pawn.Corpse.Map);
+            gameComp.AddDaemonToPool(pawn);
             pawn.Corpse.DeSpawn();
             base.Notify_PawnDied(dinfo, null);
         }

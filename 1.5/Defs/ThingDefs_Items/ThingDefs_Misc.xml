@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>BEWH_DaemonPrince</defName>
+        <label>summon banished daemon prince</label>
+        <description>A daemon prince summoned back from the warp it was banished to.</description>
+        <graphicData>
+          <texPath>Things/Item/DaemonPrince</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>1</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+          <MarketValue>0</MarketValue>
+          <MaxHitPoints>1</MaxHitPoints>
+          <Mass>0</Mass>
+          <Flammability>0</Flammability>
+        </statBases>
+        <thingCategories>
+          <li>ItemsMisc</li>
+        </thingCategories>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <tradeability>None</tradeability>
+        <techLevel>Neolithic</techLevel>
+      </ThingDef>
+
+</Defs>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>BEWH_DoBillChaosShrine</defName>
+    <label>do ritual</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Research</workType>
+    <priorityInType>35</priorityInType>
+    <fixedBillGiverDefs>
+      <li>BEWH_UndividedAltar</li>
+      <li>BEWH_KhorneAltar</li>
+      <li>BEWH_NurgleAltar</li>
+      <li>BEWH_SlaaneshAltar</li>
+      <li>BEWH_TzeentchAltar</li>
+    </fixedBillGiverDefs>
+    <verb>ritual</verb>
+    <gerund>doing ritual at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+</Defs>

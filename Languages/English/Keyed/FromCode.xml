@@ -2,13 +2,18 @@
 <LanguageData>
 
   <!-- Mod setting related-->
-  <ModSettingsNameChaos>Warhammer 40k - Chaos</ModSettingsNameChaos>
+  <BEWH.ModSettingsNameChaos>Warhammer 40k - Chaos</BEWH.ModSettingsNameChaos>
 
   <!-- Chaos gene giver item -->
-  <UseChaosItem>Try imbue {0} with power by using {1}</UseChaosItem>
-  <NoMorePossibleGifts>Using this item will have no effect on {0}</NoMorePossibleGifts>
+  <BEWH.UseChaosItem>Try imbue {0} with power by using {1}</BEWH.UseChaosItem>
+  <BEWH.NoMorePossibleGifts>Using this item will have no effect on {0}</BEWH.NoMorePossibleGifts>
 
-  <ChaosItemLetterTitle>Gift of Chaos</ChaosItemLetterTitle>
-  <ChaosItemLetterMessage>{0} have recieved the following gift: {1}</ChaosItemLetterMessage>
+  <BEWH.ChaosItemLetterTitle>Gift of Chaos</BEWH.ChaosItemLetterTitle>
+  <BEWH.ChaosItemLetterMessage>{0} have recieved the following gift: {1}</BEWH.ChaosItemLetterMessage>
+
+
+  <!-- Summon Daemon-->
+  <BEWH.ChooseDaemon>Choose daemon</BEWH.ChooseDaemon>
+  <BEWH.SelectDaemon>Select</BEWH.SelectDaemon>
 
 </LanguageData>

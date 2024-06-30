@@ -60,6 +60,19 @@
                     </value>
                 </li>
 
+                <!-- Living Saint forbidden Genes -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/GeneDef[defName="BEWH_LivingSaintBeingOfFaith"]/modExtensions/li[@Class="Genes40k.DefModExtension_LivingSaint"]/cantHaveGenes</xpath>
+                    <value>
+                        <li>BEWH_DaemonMutation</li>
+                        <li>BEWH_KhorneMark</li>
+                        <li>BEWH_NurgleMark</li>
+                        <li>BEWH_TzeentchMark</li>
+                        <li>BEWH_SlaaneshMark</li>
+                        <li>BEWH_UndividedMark</li>
+                    </value>
+                </li>
+
             </operations>
         </match>
     </Operation>
