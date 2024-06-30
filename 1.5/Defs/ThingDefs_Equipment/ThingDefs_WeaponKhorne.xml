@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Hellblade -->
+  <ThingDef ParentName="BEWH_DaemonWeaponBase">
+    <defName>BEWH_Hellblade</defName>
+    <label>Hellblade</label>
+    <description>Hellblade of a Bloodletter, enhanced by the powers of the warp.</description>
+    <equippedAngleOffset></equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Weapons/Hellblade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>40</power>
+        <cooldownTime>2.5</cooldownTime>
+        <armorPenetration>0.75</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>40</power>
+        <cooldownTime>3</cooldownTime>
+        <armorPenetration>0.75</armorPenetration>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>Bloodletter</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!-- Falx Blade -->
+  <ThingDef ParentName="BEWH_ChaosWeaponBase">
+    <defName>BEWH_FalxBlade</defName>
+    <label>Falx Blade</label>
+    <description>.</description>
+    <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+    <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <graphicData>
+      <texPath>Things/Weapons/CHFalxBlade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BEWH_KhorneResearch</researchPrerequisite>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>0.75</cooldownTime>
+        <armorPenetration>0.75</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>1</cooldownTime>
+        <armorPenetration>0.75</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- Chain Axe -->
+  <ThingDef ParentName="BEWH_ChaosWeaponBase">
+    <defName>BEWH_ChainAxe</defName>
+    <label>Chainaxe</label>
+    <description>.</description>
+    <soundInteract>Interact_PlasmaSword</soundInteract>
+    <graphicData>
+      <texPath>Things/Weapons/CHChainAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BEWH_KhorneResearch</researchPrerequisite>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>Chainsword Teeth</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>32</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.75</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

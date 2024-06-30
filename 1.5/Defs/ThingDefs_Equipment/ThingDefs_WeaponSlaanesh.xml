@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Daemonette Claw -->
+  <ThingDef ParentName="BEWH_DaemonWeaponBase">
+    <defName>BEWH_DaemonetteClaw</defName>
+    <label>Daemonette Claw</label>
+    <description>Claw of a daemonette, a hardened carapace forming a deadly edge capable of penetrating even power armour.</description>
+    <equippedAngleOffset></equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Weapons/DaemonetteClaw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>0.65</cooldownTime>
+        <armorPenetration>0.8</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1</cooldownTime>
+        <armorPenetration>0.8</armorPenetration>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>Daemonette</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!-- Blissmaker -->
+  <ThingDef ParentName="BEWH_ChaosWeaponBase">
+    <defName>BEWH_Blissmaker</defName>
+    <label>Blissmaker</label>
+    <description>.</description>
+    <soundInteract>Interact_PlasmaSword</soundInteract>
+    <meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
+    <graphicData>
+      <texPath>Things/Weapons/CHBlissmaker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BEWH_SlaaneshResearch</researchPrerequisite>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.75</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>52</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.75</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

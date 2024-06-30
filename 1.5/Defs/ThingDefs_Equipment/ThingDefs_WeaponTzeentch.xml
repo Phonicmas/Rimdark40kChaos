@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Dagger of Tzeentch -->
+  <ThingDef ParentName="BEWH_DaemonWeaponBase">
+    <defName>BEWH_PinkHorrorDagger</defName>
+    <label>Dagger of Tzeentch</label>
+    <description>Magically enchanced of a Horror of Tzeentch, enhanced by the powers of the warp, capaable on penetrating even power armour.</description>
+    <equippedAngleOffset></equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Weapons/HorrorDagger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1</cooldownTime>
+        <armorPenetration>1</armorPenetration>
+        <extraMeleeDamages>
+          <li>
+            <def>BEWH_WarpEnergy</def>
+            <amount>3</amount>
+            <armorPenetration>5</armorPenetration>
+          </li>
+        </extraMeleeDamages>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1</cooldownTime>
+        <armorPenetration>1</armorPenetration>
+        <extraMeleeDamages>
+          <li>
+            <def>BEWH_WarpEnergy</def>
+            <amount>3</amount>
+            <armorPenetration>5</armorPenetration>
+          </li>
+        </extraMeleeDamages>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>PinkHorror</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!-- Power Kopesh -->
+  <ThingDef ParentName="BEWH_ChaosWeaponBase">
+    <defName>BEWH_PowerKopesh</defName>
+    <label>Power Kopesh</label>
+    <description>.</description>
+    <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+    <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <graphicData>
+      <texPath>Things/Weapons/CHPowerKopesh</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BEWH_TzeentchResearch</researchPrerequisite>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>39</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>1</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- Inferno Bolter -->
+  <ThingDef ParentName="BEWH_ChaosWeaponRangedBase">
+    <defName>BEWH_InfernoBolter</defName>
+    <label>Inferno Bolter</label>
+    <description>The Bolter, also called a Boltgun, and its variants are some of the most powerful, hand-held, ballistic anti-personnel weaponry. It is a powerful assault weapon that fires explosive kinetic rounds colloquially referred to as bolts. This version have had its bolter round enhanced by tzeentch sourcerous.</description>
+    <graphicData>
+      <texPath>Things/Weapons/CHInfernoBolter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>4.6</Mass>
+      <AccuracyTouch>0.70</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.80</AccuracyLong>
+      <RangedWeapon_Cooldown>2.00</RangedWeapon_Cooldown>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>BEWH_TzeentchResearch</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <Steel>160</Steel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_InfernoBolterRound</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>35</range>
+        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>BEWH_InfernoBolterRound</defName>
+    <label>Inferno Bolter Round</label>
+    <graphicData>
+      <texPath>Things/Projectiles/CHInfernoBolterRound</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>32</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+
+  <!-- Soulreaper Cannon-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_CHSoulreaper</defName>
+    <label>Soulreaper cannon</label>
+    <description>An Autocannon is an automatic, self-loading heavy ballistic weapon that fires a high velocity hail of solid shells. This version have had its bolter round enhanced by tzeentch sourcerous.</description>
+    <graphicData>
+      <texPath>Things/Weapons/CHSoulreaperCannon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>60000</WorkToMake>
+      <Mass>15</Mass>
+      <AccuracyTouch>0.25</AccuracyTouch>
+      <AccuracyShort>0.35</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>30</Plasteel>
+      <Steel>220</Steel>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>BEWH_TzeentchResearch</researchPrerequisite>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>BEWH_SoulreaperRound</defaultProjectile>
+        <warmupTime>2.5</warmupTime>
+        <range>35</range>
+        <burstShotCount>12</burstShotCount>
+        <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+        <soundCast>Shot_SniperRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>BEWH_SoulreaperRound</defName>
+    <label>Soulreaper bullet</label>
+    <graphicData>
+      <texPath>Things/Projectiles/CHSoulreaperRound</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <speed>90</speed>
+    </projectile>
+  </ThingDef>
+
+</Defs>

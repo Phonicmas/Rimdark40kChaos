@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Plaguesword -->
+  <ThingDef ParentName="BEWH_DaemonWeaponBase">
+    <defName>BEWH_Plaguesword</defName>
+    <label>Plaguesword</label>
+    <description>Plaguesword of a Plaguebearer, enhanced by the powers of the warp.</description>
+    <equippedAngleOffset></equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Weapons/Plaguesword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.6</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2</cooldownTime>
+        <armorPenetration>0.6</armorPenetration>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>Plaguebearer</li>
+    </weaponTags>
+    <comps>
+      <li Class="AnimalBehaviours.CompProperties_Infecter">
+        <infectionChance>70</infectionChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- Manreaper -->
+  <ThingDef ParentName="BEWH_ChaosWeaponBase">
+    <defName>BEWH_Manreaper</defName>
+    <label>Manreaper</label>
+    <description>.</description>
+    <soundInteract>Interact_PlasmaSword</soundInteract>
+    <meleeHitSound>MeleeHit_PlasmaSword</meleeHitSound>
+    <graphicData>
+      <texPath>Things/Weapons/CHManreaper</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>BEWH_NurgleResearch</researchPrerequisite>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>52</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.75</armorPenetration>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>26</power>
+        <cooldownTime>2.5</cooldownTime>
+        <armorPenetration>0.75</armorPenetration>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

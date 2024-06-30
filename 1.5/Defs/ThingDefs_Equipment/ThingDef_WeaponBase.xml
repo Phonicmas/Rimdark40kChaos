@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Base Weapon Melee -->
+  <ThingDef Abstract="True" Name="BEWH_DaemonWeaponBase" ParentName="BaseWeapon">
+    <techLevel>Ultra</techLevel>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>4</Mass>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <tradeTags>
+      <li>BEWH_ChaosMelee</li>
+    </tradeTags>
+    <weaponTags>
+      <li>BEWH_ChaosMelee</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef Abstract="True" Name="BEWH_ChaosWeaponBase" ParentName="BaseWeapon">
+    <techLevel>Ultra</techLevel>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>2</Mass>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <Steel>140</Steel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponTags>
+      <li>BEWH_ChaosMelee</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!-- Base Weapon Ranged -->
+  <ThingDef Abstract="True" Name="BEWH_ChaosWeaponRangedBase" ParentName="BaseHumanMakeableGun">
+    <techLevel>Spacer</techLevel>
+    <soundInteract>Interact_ChargeRifle</soundInteract>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>4</Mass>
+    </statBases>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <burnableByRecipe>true</burnableByRecipe>
+    <tradeTags>
+      <li>BEWH_ChaosRanged</li>
+    </tradeTags>
+    <weaponTags>
+      <li>BEWH_ChaosRanged</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+
+</Defs>
