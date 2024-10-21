@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Warhammer 40.000 - Path to Chaos</name>
+	<name>RimDark 40k - Path to Chaos</name>
 	<author>Phonicmas</author>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
 	<packageId>Phonicmas.40kChaos</packageId>
 	<description>
-		Warhammer 40k - Chaos module.
+		RimDark 40k - Chaos module.
 	</description>
 	<modDependencies>
 		<li>
@@ -16,7 +16,7 @@
 		</li>
 		<li>
 			<packageId>Phonicmas.40kCore</packageId>
-			<displayName>Warhammer 40k - Framework</displayName>
+			<displayName>RimDark 40k - Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3267464767</steamWorkshopUrl>
 		</li>
 	</modDependencies>
