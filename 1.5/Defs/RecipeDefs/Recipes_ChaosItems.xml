@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-
     <!-- Geneseed Creation Base -->
     <RecipeDef Name="BEWH_ChaosRecipeBase" Abstract="True">
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
