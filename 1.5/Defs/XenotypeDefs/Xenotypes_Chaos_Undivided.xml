@@ -14,7 +14,7 @@
     </genes>
   </XenotypeDef>
 
-  <!-- Chaos Marine -->
+  <!-- Chaos Cultist -->
   <XenotypeDef ParentName="ChaosCultistBase">
     <defName>BEWH_ChaosCultist</defName>
     <label>chaos cultist</label>
